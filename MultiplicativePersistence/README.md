@@ -10,7 +10,8 @@ mongoexport --db BharathMaths --collection MultiplicativePersistence --out data.
 mongoexport --db=BharathMaths --collection=MultiplicativePersistence --type=csv --fields=Number,Steps --out=data.csv
 
 # Sort the Data in Mongodb
+```javascript
 use BharathMaths
 db.MultiplicativePersistence.aggregate([{$sort : { Steps : -1} }],{allowDiskUse: true})
-
+```
 ### Bharath C
