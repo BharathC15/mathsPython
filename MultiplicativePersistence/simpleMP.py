@@ -9,9 +9,8 @@ def persistant(n):
     while len(str(n))>1:
         final=1
         step+=1
-        m=[int(x) for x in str(n)]
-        for i in m:
-            final*=i
+        for i in str(n):
+            final*=int(i)
         print("Step no",step,"Value is",final)
         n=final 
     print("Total No of steps is :",step)

@@ -13,9 +13,8 @@ def persistant(data):
     while len(str(n))>1:
         final=1
         step+=1
-        m=[int(x) for x in str(n)]
-        for i in m:
-            final*=i
+        for i in str(n):
+            final*=int(i)
         n=final 
     if(step>=threshold):
         print (data,"steps ->",step)
